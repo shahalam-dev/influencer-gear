@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #ffffffd7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex-con {
+    display: flex;
+    justify-content: space-around;
+}
+
+.half-width {
+    flex: 1;
+    align-self: center;
+}
+
+.one-third {
+    flex-grow: 1;
+}
+
+.two-third {
+    flex-grow: 2;
+    text-align: right;
+}
+
+
+
+/*================================*/
+
+header {
+    padding: 50px 0;
+}
+
+.flex-hero-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-area:hover .hero-img img {
+    transform: scale(1.2);
+} 
+
+.hero-area {
+    padding: 150px 0;
+}
+
+.hero-area img {
+    width: 60%;
+    transition: .3s;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #E02C6D;
+    border: none;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.btn > i {
+    padding: 0 5px;
+}
+
+.hero-img {
+    background-image: url(./Circle\ design.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+
+.hero-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+.nav a {
+    color: #0A0826;
+    padding: 10px 20px;
+}
+
+/* .nav {
+    border: 1px solid linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(176,176,176,0.908000700280112) 50%, rgba(242,243,244,1) 100%);
+} */
+
+
+/*================================*/
+
+section.partner-brand {
+    display: flex;
+    gap: 30px 50px;
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.partner-brand img {
+    flex: 1;
+    max-width: 10%;
+    min-width: 150px;
+    min-height: 100px;
+    margin: 30px 0;
+}
+
+
+/*================================*/
+
+.product-area {
+    padding: 100px 0;
+}
+
+.pd-area-title {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid linear-gradient(90deg, rgba(249,249,249,1) 0%, rgba(176,176,176,0.908000700280112) 50%, rgba(242,243,244,1) 100%);
+    width: 250px;
+    margin: 50px auto;
+}
+
+.pd-img {
+    height: 200px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-color: azure;
+    border-radius: 5px;
+    background-position: center;
+}
+
+.pd-1 {
+    background-image: url(https://i.ibb.co/WDWgSZ2/tripod.png);
+}
+
+.pd-2 {
+    background-image: url(https://i.ibb.co/n0H8xRs/mic.png);
+}
+
+.pd-3 {
+    background-image: url(https://i.ibb.co/hHRrWsK/airpod.png);
+}
+
+.pd-4 {
+    background-image: url(https://i.ibb.co/rs1Q50j/drone.png);
+}
+
+.pd-5 {
+    background-image: url(https://i.ibb.co/0jsZ7rB/lights.png);
+}
+
+.pd-6 {
+    background-image: url(https://i.ibb.co/9VZNNC9/setup.png);
+}
+
+.pd-7 {
+    background-image: url(https://i.ibb.co/xCHnM1n/camera.png);
+}
+
+.pd-8 {
+    background-image: url(https://i.ibb.co/t8tcwT1/single-light.png);
+}
+
+.pd-9 {
+    background-image: url(https://i.ibb.co/VmXPFPK/action.png);
+}
+
+
+.pd-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    justify-items: center;
+}
+
+.single-pd {
+    padding: 15px;
+    border-radius: 5px;
+    place-self: center;
+    box-shadow: -3px -1px 29px 1px #e9e9e9;
+    background-color: #ffffff;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.single-pd:hover {
+    transform: scale(1.1);
+}
+
+
+.tiny-text {
+    font-size: 15px;
+    color: #494949;
+    font-weight: 300;
+}
+
+.single-pd > * {
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 14px;
+    color: orange;
+}
+
+.see-more {
+    text-align: right;
+    margin: 60px;
+}
+
+.see-more > a {
+    color: #E02C6D;
+    position: relative;
+}
+
+.see-more > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #E02C6D;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+}
+
+.see-more > a:hover::before {
+    transform: scaleX(1);
+}
+
+
+/*=============================*/
+.newsletter {
+    padding: 150px;
+    text-align: center;
+    background-color: #ece5e57a;
+}
+
+section.newsletter h2 {
+    margin-bottom: 30px;
+}
+
+section.newsletter input {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    color: #494949;
+}
+
+.news-form {
+    margin: 0 auto;
+    border: 3px solid #d8d8d8b4;
+    padding: 3px;
+    background: #fff;
+    border-radius: 50px;
+    width: 345px;
+}
+
+input.news-btn {
+    margin-right: -20px;
+    border-radius: 50px;
+    background-color: #E02C6D;
+    color: #fff !important;
+    cursor: pointer;
+    transition: .2s;
+}
+
+input.news-btn:hover {
+    background: #ff4f8f;
+}
+
+/*=============================*/
+.footer {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #0A0826;
+    color: #ffffff;
+}
+
+.social-icon {
+    text-align: center;
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+.social-icon > i {
+    padding: 15px;
+    line-height: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #272546;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/*==================================*/
+
+@media (max-width: 576px) {
+
+    .flex-hero-area {
+        flex-direction: column-reverse;
+    }
+
+    .hero-area {
+        text-align: center;
+    }
+
+    .pd-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pd-img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .newsletter {
+        display: none;
+    }
+
+    .hero-img {
+        padding: 50px 0;
+        margin: 50px 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .flex-hero-area {
+        flex-direction: column-reverse;
+    }
+
+    .pd-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-area {
+        text-align: center;
+    }
+
+    .pd-img {
+        height: 150px;
+        width: 250px;
+    }
+
+    .newsletter {
+        display: none;
+    }
+
+    .hero-img {
+        padding: 50px 0;
+        margin: 50px 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+}
